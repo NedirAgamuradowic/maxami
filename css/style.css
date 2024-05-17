@@ -57,6 +57,34 @@ p{
 	font-size: 2.2rem;
 }
 
+/* containers */
+.container{
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+}
+.flex--phone, .flex--tablet{
+	flex-direction: column;
+}
+.flex--center{
+	align-items: center;
+	justify-content: center;
+}
+.wrapper{
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+@media screen and (min-width:600px) {
+	.flex--phone{
+		flex-direction: row;
+	}
+}
 
 @media  screen and (min-width:768px) {
 	h1{
@@ -70,5 +98,15 @@ p{
 	}
 	p{
 		font-size: 1.8rem;
+	}
+	.flex--tablet{
+		flex-direction: row;
+	}
+}
+
+@media screen and (min-width:1024px){
+	.wrapper{
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
