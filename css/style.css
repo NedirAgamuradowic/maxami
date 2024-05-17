@@ -128,6 +128,18 @@ p{
 	background: var(--primaryColor);
 }
 
+/* action */
+.action{
+	font-size: 1.8rem;
+}
+.action .or{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+.action .btn--gradient{
+	margin-right: 3rem;
+}
+
 @media screen and (min-width:600px) {
 	.flex--phone{
 		flex-direction: row;
@@ -150,9 +162,10 @@ p{
 	.flex--tablet{
 		flex-direction: row;
 	}
-	.link{
+	.link, .btn, .action{
 		font-size: 1.6rem;
 	}
+
 }
 
 @media screen and (min-width:1024px){
