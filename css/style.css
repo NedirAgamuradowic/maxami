@@ -21,7 +21,8 @@
 
 
 	/* border radius */
-	--borderRadius:100px;
+	--bigRadius:100px;
+	--smallRadius:10px;
 
 	 /* box shadow */
 	--boxShadow:0 0 20px 0 rgba(205, 208, 216);
@@ -108,7 +109,7 @@ p{
 	font-size: 1.8rem;
 	font-weight: 700;
 	padding: 1rem 2rem;
-	border-radius: 100px;
+	border-radius:var(--bigRadius) ;
 	cursor: pointer;
 }
 .btn--outline{
@@ -139,6 +140,55 @@ p{
 .action .btn--gradient{
 	margin-right: 3rem;
 }
+
+/* circle */
+.circle{
+	position: relative;
+	display: inline-block;
+	border-radius: var(--bigRadius);
+}
+.circle--primary{
+	background: var(--primaryColor);
+}
+.circle--secondary{
+	background: var(--secondaryColor);
+}
+.circle--gradient{
+	background: var(--gradientElement);
+}
+.circle--small{
+	width: 25px;
+	height: 25px;
+}
+.circle--medium{
+	width: 75px;
+	height: 75px;
+}
+.circle--big{
+	width: 125px;
+	height: 125px;
+}
+.circle .play{
+	display: block;
+    width: 0;
+    height: 20px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 21px solid #fff;
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -55%);
+}
+.circle .down{
+	color: var(--whiteColor);
+	font-size: 7rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 
 @media screen and (min-width:600px) {
 	.flex--phone{
