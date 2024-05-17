@@ -80,6 +80,23 @@ p{
 	padding-right: 1rem;
 }
 
+/* link */
+.link{
+	position: relative;
+	font-size: 1.8rem;
+	color: var(--textColor);
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.link::after{
+	content: '\2192';
+	margin-left: 1rem;
+	transition: margin-left .5s;
+}
+.link:hover::after{
+	margin-left: 1.5rem;
+}
+
 @media screen and (min-width:600px) {
 	.flex--phone{
 		flex-direction: row;
@@ -101,6 +118,9 @@ p{
 	}
 	.flex--tablet{
 		flex-direction: row;
+	}
+	.link{
+		font-size: 1.6rem;
 	}
 }
 
