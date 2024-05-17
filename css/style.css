@@ -1,0 +1,32 @@
+:root{
+	/* color palette */
+	--gradientElement:linear-gradient(63deg, rgb(104,82,237) 0%, rgb(186, 67, 252) 100%);
+	--gradientBackground:linear-gradient(-90deg, rgb(104,82,237) 0%, rgb(186, 67, 252) 100%);
+	--primaryColor:rgb(104, 82, 237);
+	--secondaryColor:rgb(186, 67, 252);
+	--headingColor:rgb(85, 77, 137);
+	--textColor:rgb(113, 108, 128);
+	--badgeBackground:rgba(225, 228,237, 0.6);
+	--badgeText:rgb(239, 113, 113);
+	--whiteColor:#fff;
+	
+	/* fonts */
+	--textFont:"Nunito", sans-serif;
+	--headingFont:"Poppins", sans-serif;
+
+	/* media sizes */
+	--phone:'min-width:600px';
+	--tablet:'min-width:768px';
+	--desktop:'min-width:1024px';
+
+
+	/* border radius */
+	--borderRadius:100px;
+
+	 /* box shadow */
+	--boxShadow:0 0 20px 0 rgba(205, 208, 216);
+}
+
+
+
+
