@@ -442,11 +442,9 @@ p{
 .call{
 	align-items: center;
 	gap: 1.5rem;
-	color: var(--whiteColor);
 }
 .call__icon{
 	font-size: 4rem;
-	color: var(--whiteColor);
 }
 .call__text .question{
 	font-size: 1.1rem;
@@ -456,9 +454,24 @@ p{
 .call__number{
 	font-weight: 700;
 	font-size: 2rem;
-	color: var(--whiteColor);
 	line-height: 1;
 }
+
+/* contacts */
+.contact__heading{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+.contact__address{
+	font-size: 1.8rem;
+	font-style: normal;
+}
+.location, .email{
+	font-size: 1.6rem;
+	margin-top: 1rem;
+}
+
+
 
 @media screen and (min-width:600px) {
 	.flex--phone{
