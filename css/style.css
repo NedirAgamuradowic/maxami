@@ -228,7 +228,7 @@ p{
 .input-group{
 	align-items: center;
 	justify-content: space-between;
-	padding: 1.5rem 2rem;
+	padding: 1rem 2rem;
 	border: 2px solid var(--primaryColor);
 	border-radius: var(--bigRadius);
 }
@@ -238,6 +238,7 @@ p{
 }
 .input-group .icon{
 	font-size: 1.8rem;
+	transform: translateY(5px);
 }
 
 /* media element */
@@ -464,7 +465,7 @@ p{
 }
 .box__heading{
 	font-size: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 2.5rem;
 }
 
 /* contacts */
@@ -488,6 +489,13 @@ p{
 .links .link:hover{
 	font-weight: 700;
 	opacity: 1;
+}
+
+/* subscribe */
+.subscribe__text{
+	font-size: 1.6rem;
+	opacity: .7;
+	margin-top: 2.5rem;
 }
 
 
