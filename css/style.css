@@ -14,12 +14,6 @@
 	--textFont:"Nunito", sans-serif;
 	--headingFont:"Poppins", sans-serif;
 
-	/* media sizes */
-	--phone:'min-width:600px';
-	--tablet:'min-width:768px';
-	--desktop:'min-width:1024px';
-
-
 	/* border radius */
 	--bigRadius:100px;
 	--smallRadius:10px;
@@ -123,10 +117,11 @@ p{
 	text-transform: capitalize;
 	letter-spacing: 1.5px;
 	font: inherit;
-	font-size: 1.8rem;
+	font-size: 1.3rem;
 	font-weight: 700;
 	padding: 1rem 2rem;
 	border-radius:var(--bigRadius) ;
+	display: inline-block;
 	cursor: pointer;
 }
 .btn--outline{
@@ -499,6 +494,51 @@ p{
 }
 
 
+/* navbar section */
+.navbar{
+	padding: 1rem;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.menu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: var(--badgeBackground);
+	overflow: hidden;
+	opacity: 0;
+}
+.menu.show{
+	opacity: 1;
+	height: 320px;
+	transition: height .7s, opacity .8s;
+}
+.menu__list{
+	margin: 2rem 1rem;
+}
+.menu__item{
+	margin-bottom: 1rem;
+}
+.menu__link:hover{
+	font-weight: 700;
+	color: var(--headingColor);
+}
+.menu__action{
+	margin: 0 1rem 2rem;
+}
+.bar{
+	border: none;
+	outline: none;
+	background: transparent;
+	font-weight: 700;
+	font-size: 3rem;
+	color: var(--headingColor);
+	cursor: pointer;
+}
+
 @media screen and (min-width:600px) {
 	.flex--phone{
 		flex-direction: row;
@@ -522,10 +562,34 @@ p{
 	.flex--tablet{
 		flex-direction: row;
 	}
-	.link, .btn, .action, .input, .list{
-		font-size: 1.6rem;
+	.action, .input, .list{
+		font-size: 1.8rem;
 	}
-
+	.menu{
+		position: relative;
+		height: 0;
+		opacity: 1;
+		background: transparent;
+		flex-grow: 1;
+	}
+	.menu.show{
+		height: auto;
+	}
+	.bar{
+		display: none;
+	}
+	.menu{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.menu__list{
+		display: flex;
+	}
+	.menu__item{
+		margin-left: 1rem;
+	}
+	
 }
 
 @media screen and (min-width:1024px){
