@@ -81,20 +81,22 @@ p{
 	padding-right: 1rem;
 }
 
-/* link */
+/* link  */
 .link{
-	position: relative;
 	font-size: 1.8rem;
 	color: var(--textColor);
 	text-decoration: none;
-	text-transform: capitalize;
 }
-.link::after{
+.link--arrow{
+	text-transform: capitalize;
+	position: relative;
+}
+.link--arrow::after{
 	content: '\2192';
 	margin-left: 1rem;
 	transition: margin-left .5s;
 }
-.link:hover::after{
+.link--arrow:hover::after{
 	margin-left: 1.5rem;
 }
 
@@ -366,12 +368,23 @@ p{
 	text-transform: capitalize;
 }
 
+/* list */
+.list{
+	font-size: 1.8rem;
+	list-style: none;
+	padding: 0;
+}
+.item::first-letter{
+	text-transform: capitalize;
+}
+
 
 @media screen and (min-width:600px) {
 	.flex--phone{
 		flex-direction: row;
 	}
 }
+
 
 @media  screen and (min-width:768px) {
 	h1{
@@ -389,7 +402,7 @@ p{
 	.flex--tablet{
 		flex-direction: row;
 	}
-	.link, .btn, .action, .input{
+	.link, .btn, .action, .input, .list{
 		font-size: 1.6rem;
 	}
 
