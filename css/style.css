@@ -178,8 +178,8 @@ p{
 	height: 25px;
 }
 .circle--medium{
-	width: 75px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
 }
 .circle--big{
 	width: 125px;
@@ -188,10 +188,10 @@ p{
 .circle .play{
 	display: block;
     width: 0;
-    height: 20px;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 21px solid #fff;
+    height: 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 11px solid #fff;
 	position: absolute;
 	top: 50%;
 	left: 55%;
@@ -273,6 +273,17 @@ p{
 }
 .content--big .content__desc{
 	margin: 2.5rem 0 3rem;
+}
+.content--center{
+	text-align: center;
+}
+.content--center .content__btn{
+	border: none;
+	outline: none;
+	background: transparent;
+}
+.content--center .content__heading{
+	margin: 1.5rem 0;
 }
 
 
