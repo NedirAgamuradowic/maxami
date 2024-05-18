@@ -291,10 +291,11 @@ p{
 /* range */
 .range{
 	width: 100%;
-	height: 10px;
+	height: 12px;
 	background: var(--badgeBackground);
 	position: relative;
 	border-radius: var(--bigRadius);
+	margin-bottom: 1.2rem;
 }
 .range::after{
 	content: '';
@@ -304,6 +305,32 @@ p{
 	border-radius: var(--bigRadius);
 	height: 100%;
 	background: var(--primaryColor);
+}
+
+/* range box element */
+.rangebox{
+	padding: .5rem;
+}
+.rangebox__text{
+	font-size: 1.6rem;
+	margin-bottom: 1.2rem;
+	justify-content: space-between;
+}
+.rangebox__text .type{
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+}
+.brand .range::after{
+	width: 96%;
+}
+.design .range::after{
+	width: 81%;
+}
+.pr .range::after{
+	width: 90%;
+}
+.ph .range::after{
+	width: 88%;
 }
 
 @media screen and (min-width:600px) {
