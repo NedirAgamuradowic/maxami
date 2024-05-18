@@ -375,7 +375,7 @@ p{
 /* money */
 .money{
 	line-height: 1;
-	font-size: 5rem;
+	font-size: 4rem;
 	font-weight: 700;
 	font-family:var(--headingFont);
 	color: var(--headingColor);
@@ -391,7 +391,7 @@ p{
 	width: max-content;
 }
 .moneybox .month{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 .moneybox .month::first-letter{
 	text-transform: capitalize;
@@ -399,12 +399,11 @@ p{
 
 /* list */
 .list{
-	font-size: 1.8rem;
 	list-style: none;
 	padding: 0;
 }
-.item::first-letter{
-	text-transform: capitalize;
+.list .link{
+	font-size: 1.6rem;
 }
 
 
@@ -413,7 +412,7 @@ p{
 	content: 'best choise';
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 1rem;
+	font-size: .9rem;
 	padding: .8rem 1rem;
 	background: var(--badgeBackground);
 	color: var(--badgeText);
@@ -425,20 +424,23 @@ p{
 
 /* price */
 .price{
-	padding: 3rem 4.5rem;
+	padding: 3rem 4rem;
 }
 .price__heading{
 	text-transform: capitalize;
 	position: relative;
 }
 .price .divider{
-	margin: 3rem 0;
+	margin: 2.5rem 0;
 }
 .price__list{
-	margin: 5rem 0;
+	margin: 4rem 0 4.5rem;
 }
 .price__item{
-	margin-bottom: 1rem;
+	margin-bottom: .8rem;
+}
+.price__btn{
+	width: 100%;
 }
 
 /* call */
