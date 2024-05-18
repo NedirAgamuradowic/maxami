@@ -71,7 +71,7 @@ i{
 
 /* link  */
 .link{
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	color: var(--textColor);
 	text-decoration: none;
 	position: relative;
@@ -144,7 +144,7 @@ i{
 	margin-right: 1rem;
 }
 .action .btn--gradient{
-	margin-right: 3rem;
+	margin-right: 2rem;
 }
 
 /* circle */
@@ -749,18 +749,21 @@ i{
 		width: 70%;
 		font-size: 2.5rem;
 	}
-	
-}
-
-@media screen and (min-width:1024px){
-	.section__img{
-		width: 60%;
+	.cta .circle--big{
+		top: 75%;
+		left: 70%;
 	}
-	.business .section__box{
-		width: 70%;
+	.cta .circle--small:nth-child(1){
+		top: 7%;
+		right: 10%;
 	}
-	.business .section__content{
-		width: 25%;
+	.cta .circle--small:nth-child(2){
+		top: 57%;
+		left: 50%;
+	}
+	.cta .circle--medium{
+		top: 70%;
+		left: -1%;
 	}
 	.video > .circle, .footer > .circle{
 		display: block;
@@ -789,22 +792,7 @@ i{
 		top: 90%;
 		left: 50%;
 	}
-	.cta .circle--big{
-		top: 75%;
-		left: 70%;
-	}
-	.cta .circle--small:nth-child(1){
-		top: 7%;
-		right: 10%;
-	}
-	.cta .circle--small:nth-child(2){
-		top: 57%;
-		left: 50%;
-	}
-	.cta .circle--medium{
-		top: 70%;
-		left: -1%;
-	}
+	
 	.footer .circle--small:nth-child(1){
 		top: 10%;
 		right: 10%;
@@ -825,4 +813,18 @@ i{
 		top: 80%;
 		left: -5%;
 	}
+	
+}
+
+@media screen and (min-width:1024px){
+	.section__img{
+		width: 60%;
+	}
+	.business .section__box{
+		width: 70%;
+	}
+	.business .section__content{
+		width: 25%;
+	}
+	
 }
