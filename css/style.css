@@ -394,6 +394,21 @@ p{
 }
 
 
+/* best */
+.price__heading.best::after{
+	content: 'best choise';
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	padding: .8rem 1rem;
+	background: var(--badgeBackground);
+	color: var(--badgeText);
+	border-radius: var(--bigRadius);
+	position: absolute;
+	top: 1%;
+	right: 0;
+}
+
 @media screen and (min-width:600px) {
 	.flex--phone{
 		flex-direction: row;
