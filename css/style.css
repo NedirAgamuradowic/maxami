@@ -237,6 +237,12 @@ p{
 .media--row{
 	flex-direction: row;
 }
+.media__heading{
+	font-size: 1.8rem;
+}
+.media__desc{
+	font-size: 1.6rem;
+}
 .media__heading::first-letter, .media__desc::first-letter{
 	text-transform: capitalize;
 }
@@ -280,7 +286,7 @@ p{
 	max-width: 360px;
 	border-radius: var(--smallRadius);
 	box-shadow: var(--boxShadow);
-	padding: 2.5rem;
+	padding: 2rem;
 }
 .card--white{
 	background: var(--whiteColor);
@@ -302,6 +308,16 @@ p{
 .card--gradient .content__desc{
 	margin: 2.8rem 0 2.9rem;
 }
+.card--gradient .content__heading{
+	font-size: 1.8rem;
+}
+.card--gradient .content__desc{
+	font-size: 1.5rem;
+}
+.card--gradient .content__link{
+	font-size: 1.4rem;
+}
+
 
 /* range */
 .range{
@@ -533,7 +549,7 @@ p{
 /* section */
 .section{
 	flex-direction: column;
-	padding: 2.5rem 1rem;
+	padding: 2.5rem 1rem 4.5rem;
 	gap: 3rem;
 }
 .section__img{
@@ -550,7 +566,15 @@ p{
 	display: none;
 }
 
-
+/* grid */
+.grid{
+	display: grid;
+	padding: 1rem;
+	gap: 2rem;
+}
+.grid__element{
+	justify-self: center;
+}
 
 @media  screen and (min-width:768px) {
 	h1{
@@ -610,7 +634,9 @@ p{
 	.skills .section__box{
 		width: 50%;
 	}
-	
+	.grid--3x{
+		grid-template-columns: repeat(3, 1fr);
+	}
 
 }
 
