@@ -240,11 +240,8 @@ p{
 	font-size: 3.5rem;
 	font-weight: 700;
 }
-.media__desc{
+.media--row .media__desc{
 	margin: 2rem 0;
-}
-.media--column .media__img{
-	margin-bottom: 2rem;
 }
 .media--row .media__img{
 	margin-right: 2rem;
@@ -260,8 +257,35 @@ p{
 .content--big .content__desc{
 	margin: 2.5rem 0 3rem;
 }
-.content--small .content__desc{
-	margin: 1.5rem 0;
+
+
+/* card element */
+.card{
+	width: 100%;
+	max-width: 360px;
+	border-radius: var(--smallRadius);
+	box-shadow: var(--boxShadow);
+	padding: 2.5rem;
+}
+.card--white{
+	background: var(--whiteColor);
+}
+.card--white .media__heading{
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+.card--gradient{
+	background: var(--gradientElement);
+	color: var(--whiteColor);
+}
+.card--gradient .content__heading{
+	color: var(--whiteColor);
+}
+.card--gradient .link{
+	color: var(--whiteColor);
+}
+.card--gradient .content__desc{
+	margin: 2.8rem 0 2.9rem;
 }
 
 @media screen and (min-width:600px) {
