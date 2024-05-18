@@ -189,6 +189,11 @@ p{
 	transform: translate(-50%, -50%);
 }
 
+/* icon */
+.icon{
+	color: var(--primaryColor);
+}
+
 
 @media screen and (min-width:600px) {
 	.flex--phone{
