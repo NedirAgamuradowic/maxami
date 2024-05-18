@@ -43,7 +43,7 @@ body{
 h1, h2, h3, h3{
 	line-height: 1.2;
 	font-family: var(--headingFont);
-	color: var(--primaryColor);
+	color: var(--headingColor);
 }
 h1{
 	font-size: 5rem;
@@ -193,6 +193,9 @@ p{
 .icon{
 	color: var(--primaryColor);
 }
+.icon i{
+	transform: translateY(-5px);
+}
 
 /* input */
 .input{
@@ -220,6 +223,36 @@ p{
 	font-size: 1.8rem;
 }
 
+/* media element */
+.media{
+	display: flex;
+}
+.media--column{
+	flex-direction: column;
+}
+.media--row{
+	flex-direction: row;
+}
+.media__heading::first-letter, .media__desc::first-letter{
+	text-transform: capitalize;
+}
+.media__img{
+	font-size: 3.5rem;
+	font-weight: 700;
+}
+.media__desc{
+	margin: 2rem 0;
+}
+.media--column .media__img{
+	margin-bottom: 2rem;
+}
+.media--row .media__img{
+	margin-right: 2rem;
+}
+.media--column .media__heading{
+	text-transform: capitalize;
+}
+
 @media screen and (min-width:600px) {
 	.flex--phone{
 		flex-direction: row;
@@ -242,7 +275,7 @@ p{
 	.flex--tablet{
 		flex-direction: row;
 	}
-	.link, .btn, .action{
+	.link, .btn, .action, .input{
 		font-size: 1.6rem;
 	}
 
