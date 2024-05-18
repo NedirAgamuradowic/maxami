@@ -61,22 +61,12 @@ p{
 .flex{
 	display: flex;
 }
-.flex--phone, .flex--tablet{
+.flex--tablet{
 	flex-direction: column;
 }
 .flex--center{
 	align-items: center;
 	justify-content: center;
-}
-.wrapper{
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}
-.svg{
-	width: 100%;
-	max-width: 500px;
 }
 
 /* link  */
@@ -272,7 +262,7 @@ p{
 	text-transform: capitalize;
 }
 .content--big .content__desc{
-	margin: 2.5rem 0 3rem;
+	margin: 2.5rem 0;
 }
 .content--center{
 	text-align: center;
@@ -543,17 +533,25 @@ p{
 	cursor: pointer;
 }
 
-/* hero */
-.hero{
+/* section */
+.section{
+	padding: 2.5rem 1rem;
 	gap: 3rem;
 }
-.hero__img{
-	align-self: center;
+.section__img{
+	align-self: flex-start;
+	width: 100%;
+}
+.section__content{
+	max-width: 450px;
+}
+.section__img{
+	max-width: 450px;
+}
+.service .section__img{
+	display: none;
 }
 
-@media screen and (min-width:600px) {
-	
-}
 
 
 @media  screen and (min-width:768px) {
@@ -569,7 +567,7 @@ p{
 	p{
 		font-size: 1.8rem;
 	}
-	.flex--tablet, .flex--phone{
+	.flex--tablet{
 		flex-direction: row;
 	}
 	.action, .input, .list{
@@ -599,12 +597,19 @@ p{
 	.menu__item{
 		margin-left: 1rem;
 	}
-	.hero{
+	.section{
 		justify-content: space-around;
 		align-items: center;
 	}
-	.hero__content{
-		flex-basis: 40%;
+	.section__img{
+		width: 45%;
+	}
+	.service .section__img{
+		display: block;
+		order: -1;
+	}
+	h2.content__heading{
+		font-size: 2.7rem;
 	}
 
 }
@@ -613,5 +618,8 @@ p{
 	.wrapper{
 		padding-left: 0;
 		padding-right: 0;
+	}
+	.section__img{
+		width: 60%;
 	}
 }
