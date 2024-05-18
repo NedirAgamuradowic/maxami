@@ -13,32 +13,487 @@
       content="Maxami - realize your most important business goals. We help our clients make realize their full potential"
     />
     <title>Maxami - realize your most important business goals</title>
-    <link link--arrow rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- Google fonts -->
-    <link link--arrow rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      link--arrow
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
-    <link
-      link--arrow
       href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <!-- font awesome -->
-  <link
-    link--arrow
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <body>
 
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar container flex">
+        <a href="index.html" class="logo">
+          <img src="image/logo.png" alt="logo" />
+        </a>
+        <nav class="menu">
+          <ul class="list menu__list">
+            <li class="item menu__item">
+              <a href="#" class="link menu__link">Home</a>
+            </li>
+            <li class="item menu__item">
+              <a href="#" class="link menu__link">Pages</a>
+            </li>
+            <li class="item menu__item">
+              <a href="#" class="link menu__link">Services</a>
+            </li>
+            <li class="item menu__item">
+              <a href="#" class="link menu__link">Portfolio</a>
+            </li>
+            <li class="item menu__item">
+              <a href="#" class="link menu__link">Blog</a>
+            </li>
+            <li class="item menu__item">
+              <a href="#" class="link menu__link">Contact</a>
+            </li>
+          </ul>
+          <div class="action menu__action">
+            <a href="#" class="btn btn--outline">login</a>
+            <span class="or">or</span>
+            <a href="#" class="btn btn--outline">create account</a>
+          </div>
+        </nav>
+        <button aria-label="bar" type="button" class="bar">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="container section hero flex">
+        <div class="content content--big section__content">
+          <h1 class="content__heading">realize your full potential</h1>
+          <p class="content__desc">
+            we help our clients make realize thier most important business goals
+          </p>
+          <div class="action content__action">
+            <a href="#" class="btn btn--gradient">contact us</a>
+            <a href="#" class="link link--arrow">order similar</a>
+          </div>
+        </div>
+        <img src="image/hero.svg" alt="" class="section__img" />
+      </div>
+    </header>
+    <main>
+      <div class="container grid--3x grid">
+        <div class="card card--white grid__element">
+          <div class="media media--column">
+            <div class="media__img">
+              <span class="icon"><i class="fa-solid fa-dollar-sign"></i></span>
+            </div>
+            <div class="media__content">
+              <h3 class="media__heading">corporate finance</h3>
+              <p class="media__desc">
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                Morbi ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--white grid__element">
+          <div class="media media--column">
+            <div class="media__img">
+              <span class="icon"
+                ><i class="fa-solid fa-file-invoice-dollar"></i
+              ></span>
+            </div>
+            <div class="media__content">
+              <h3 class="media__heading">audit &amp; evaluation</h3>
+              <p class="media__desc">
+                Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                Morbi ...
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card card--gradient grid__element">
+          <div class="content">
+            <h3 class="content__heading">market analysis</h3>
+            <p class="content__desc">
+              Nibh vel velit auctor aliqunean sollicitudionlerin bibendum
+              auci....
+            </p>
+            <a href="#" class="link link--arrow content__link">read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="container section service flex">
+        <div class="content content--big section__content">
+          <h2 class="content__heading">
+            get the ultimate tool and learn how to grow your audience
+          </h2>
+          <p class="content__desc">
+            At vero eos accusamus et iusto odio dignissimos ducimos qui
+            blanditiis praesentium voluptatum deleniti atque. Many desktop
+            publishing packages and web
+          </p>
+          <div class="action content__action">
+            <a href="#" class="btn btn--gradient">get started</a>
+            <a href="#" class="link link--arrow">read more</a>
+          </div>
+        </div>
+        <img src="image/service.svg" alt="" class="section__img" />
+      </div>
+      <div class="video wrapper">
+        <span class="circle circle--primary circle--small"></span>
+        <span class="circle circle--secondary circle--small"></span>
+        <span class="circle circle--secondary circle--medium"></span>
+        <span class="circle circle--primary circle--medium"></span>
+        <span class="circle circle--primary circle--big"></span>
+        <span class="circle circle--secondary circle--big"></span>
+        <span class="circle circle--gradient circle--big"></span>
+        <div class="container flex video__inner">
+          <div class="content content--center">
+            <button type="button" aria-label="btn" class="content__btn">
+              <span class="circle circle--medium circle--gradient"
+                ><span class="play"></span
+              ></span>
+            </button>
+            <h3 class="content__heading">How it works</h3>
+            <p class="content__desc">
+              This app does everything you could want it to do. It is
+              beautifully and extremely intuituve to use
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container section teamwork flex">
+        <div class="content content--big section__content">
+          <h2 class="content__heading">
+            we offer a full range of digital marketing services
+          </h2>
+          <p class="content__desc">
+            latin words, combined with a handful of model sentence structures,
+            to generate Lorem ipsum which looks reasonable. The generated Lorem
+            ipsum is therefore always free
+          </p>
+          <div class="action content__action">
+            <a href="#" class="btn btn--gradient">view prices</a>
+            <a href="#" class="link link--arrow">more info</a>
+          </div>
+        </div>
+        <img src="image/teamwork.svg" alt="" class="section__img" />
+      </div>
+      <div class="section container flex business">
+        <div class="grid grid--2x section__box">
+          <div class="card card--white">
+            <div class="media media--column">
+              <div class="media__img">
+                <span class="icon"
+                  ><i class="fa-solid fa-dollar-sign"></i
+                ></span>
+              </div>
+              <div class="media__content">
+                <h3 class="media__heading">corporate finance</h3>
+                <p class="media__desc">
+                  Duis sed odio sit amet nibh vulputate cursus a sit amet
+                  mauris. Morbi ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card card--white">
+            <div class="media media--column">
+              <div class="media__img">
+                <span class="icon"
+                  ><i class="fa-solid fa-file-invoice-dollar"></i
+                ></span>
+              </div>
+              <div class="media__content">
+                <h3 class="media__heading">audit &amp; evaluation</h3>
+                <p class="media__desc">
+                  Duis sed odio sit amet nibh vulputate cursus a sit amet
+                  mauris. Morbi ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card card--gradient">
+            <div class="content content--small">
+              <h3 class="content__heading">market analysis</h3>
+              <p class="content__desc">
+                Nibh vel velit auctor aliqunean sollicitudionlerin bibendum
+                auci....
+              </p>
+              <a href="#" class="link link--arrow content__link">read more</a>
+            </div>
+          </div>
+          <div class="card card--white">
+            <div class="media media--column">
+              <div class="media__img">
+                <span class="icon"
+                  ><i class="fa-solid fa-hand-holding-dollar"></i
+                ></span>
+              </div>
+              <div class="media__content">
+                <h3 class="media__heading">sales &amp; trade</h3>
+                <p class="media__desc">
+                  Duis sed odio sit amet nibh vulputate cursus a sit amet
+                  mauris. Morbi ...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content content--big section__content">
+          <h2 class="content__heading">get a solutions to your businesses</h2>
+          <p class="content__desc">
+            our consultants help address your most challenging isssues by
+            providing strategic, financial operational, and IT services.
+          </p>
+          <a href="#" class="btn btn--gradient content__btn">all services</a>
+        </div>
+      </div>
+      <div class="container section flex skills">
+        <div class="content content--big section__content">
+          <h2 class="content__heading">our skills &amp; expertise</h2>
+          <p class="content__desc">
+            we help company set up business strategy including design brand
+            identity or product design service. So company can focus on their
+            core business. Morbi accumsan ipsumm velit. Nam nec tellus
+          </p>
+          <a href="#" class="btn btn--gradient content__btn"
+            >we are in the press</a
+          >
+        </div>
+        <div class="section__box">
+          <div class="rangebox brand">
+            <div class="rangebox__text flex">
+              <span class="type">branding</span>
+              <span class="percent">96%</span>
+            </div>
+            <div class="range"></div>
+          </div>
+          <div class="rangebox design">
+            <div class="rangebox__text flex">
+              <span class="type">design &amp; development</span>
+              <span class="percent">81%</span>
+            </div>
+            <div class="range"></div>
+          </div>
+          <div class="rangebox pr">
+            <div class="rangebox__text flex">
+              <span class="type">PR &amp; marketing</span>
+              <span class="percent">90%</span>
+            </div>
+            <div class="range"></div>
+          </div>
+          <div class="rangebox ph">
+            <div class="rangebox__text flex">
+              <span class="type">PH &amp; marketing</span>
+              <span class="percent">88%</span>
+            </div>
+            <div class="range"></div>
+          </div>
+        </div>
+      </div>
+      <div class="cta wrapper">
+        <span class="circle circle--primary circle--small"></span>
+        <span class="circle circle--secondary circle--small"></span>
+        <span class="circle circle--secondary circle--medium"></span>
+        <span class="circle circle--primary circle--big"></span>
+        <div class="container flex cta__inner">
+          <h2 class="cta__heading">
+            Build your succesful business with us. Want to know how to do this?
+          </h2>
+          <a href="#" class="btn btn--outline cta__btn">contact us</a>
+        </div>
+      </div>
+      <div class="container grid grid--3x prices">
+        <div class="card price grid__element">
+          <header class="price__header">
+            <h3 class="price__heading best">basic</h3>
+            <div class="divider"></div>
+            <div class="moneybox flex">
+              <span class="money">15</span>
+              <span class="month">per month</span>
+            </div>
+          </header>
+          <ul class="list price__list">
+            <li class="item price__item">
+              <a href="#" class="link link--tick">free updates</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">custom domain</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">outstanding support</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--saltire">unlimited storage</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--saltire"
+                >build responsive website</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn--gradient price__btn">getting started</button>
+        </div>
+        <div class="card price grid__element">
+          <header class="price__header">
+            <h3 class="price__heading">standard</h3>
+            <div class="divider"></div>
+            <div class="moneybox flex">
+              <span class="money">37</span>
+              <span class="month">per month</span>
+            </div>
+          </header>
+          <ul class="list price__list">
+            <li class="item price__item">
+              <a href="#" class="link link--tick">free updates</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">custom domain</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">outstanding support</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">unlimited storage</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--saltire"
+                >build responsive website</a
+              >
+            </li>
+          </ul>
+          <button class="btn btn--gradient price__btn">getting started</button>
+        </div>
+        <div class="card price grid__element">
+          <header class="price__header">
+            <h3 class="price__heading">advance</h3>
+            <div class="divider"></div>
+            <div class="moneybox flex">
+              <span class="money">42</span>
+              <span class="month">per month</span>
+            </div>
+          </header>
+          <ul class="list price__list">
+            <li class="item price__item">
+              <a href="#" class="link link--tick">free updates</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">custom domain</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">outstanding support</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">unlimited storage</a>
+            </li>
+            <li class="item price__item">
+              <a href="#" class="link link--tick">build responsive website</a>
+            </li>
+          </ul>
+          <button class="btn btn--gradient price__btn">getting started</button>
+        </div>
+      </div>
+      <div class="support section container flex">
+        <div class="media media--row">
+          <div class="media__img">
+            <span class="icon"><i class="fa-solid fa-headset"></i></span>
+          </div>
+          <div class="media__content">
+            <h3 class="media__heading">looking for support</h3>
+            <p class="media__desc">
+              On the other hand, we denounce with righteous dislike so men who
+              are beguiled indidgnation and they foresee
+            </p>
+            <a href="#" class="link link--arrow media__link">read more</a>
+          </div>
+        </div>
+        <div class="media media--row">
+          <div class="media__img">
+            <span class="icon"><i class="fa-solid fa-question"></i></span>
+          </div>
+          <div class="media__content">
+            <h3 class="media__heading">view common questions</h3>
+            <p class="media__desc">
+              Et harum quidem rerum facilies est et expedita destinctio. Nam
+              libero tempore, cum soluta nobies est eligendi
+            </p>
+            <a href="#" class="link link--arrow media__link">read more</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="wrapper footer">
+      <span class="circle circle--primary circle--small"></span>
+      <span class="circle circle--secondary circle--small"></span>
+      <span class="circle circle--secondary circle--medium"></span>
+      <span class="circle circle--primary circle--medium"></span>
+      <span class="circle circle--primary circle--big"></span>
+      <div class="section container grid grid--3x footer__grid">
+        <div class="box contact">
+          <h3 class="box__heading">Contacts</h3>
+          <address class="contact__address">
+            <div class="call flex">
+              <span class="icon call__icon"
+                ><i class="fa-solid fa-headset"></i
+              ></span>
+              <p class="call__text">
+                <span class="question">Have questions?</span>
+                <a href="tel:+44141433433333" class="link call__number"
+                  >+ 44 141 552 3000</a
+                >
+              </p>
+            </div>
+            <p class="location">
+              Address: 2 ST Gabriel Walk, London SE1 6FG, United Kingdom
+            </p>
+            <p class="email">
+              Email:
+              <a href="mailto:info@betria.com" class="link">info@betria.com</a>
+            </p>
+          </address>
+        </div>
+
+        <div class="box links">
+          <h3 class="box__heading">Links</h3>
+          <div class="links__container flex">
+            <ul class="list">
+              <li class="item"><a href="#" class="link">About company</a></li>
+              <li class="item"><a href="#" class="link">Our service</a></li>
+              <li class="item"><a href="#" class="link">Team members</a></li>
+              <li class="item"><a href="#" class="link">Portfolio</a></li>
+            </ul>
+            <ul class="list">
+              <li class="item"><a href="#" class="link">Pricing plans</a></li>
+              <li class="item"><a href="#" class="link">Testimonials</a></li>
+              <li class="item"><a href="#" class="link">Contacts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box subscribe">
+          <h3 class="box__heading">Subscribe</h3>
+          <div class="input-group flex">
+            <input
+              aria-label="Email"
+              type="email"
+              class="input"
+              placeholder="Enter your email"
+            />
+            <span class="icon"><i class="fa-regular fa-paper-plane"></i></span>
+          </div>
+          <p class="subscribe__text">
+            Keep up to date with all new themes and updates
+          </p>
+        </div>
+      </div>
+      <div class="footer__copy">
+        &copy; Maxami 2024 Landing Page by Medemanow
+      </div>
+    </footer>
     <script>
       const bar = document.querySelector(".bar");
       const menu = document.querySelector(".menu");
