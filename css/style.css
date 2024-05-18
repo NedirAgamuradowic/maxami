@@ -457,11 +457,17 @@ p{
 	line-height: 1;
 }
 
-/* contacts */
-.contact__heading, .links__heading{
+/* box */
+.box{
+	width: 100%;
+	max-width: 320px;
+}
+.box__heading{
 	font-size: 2rem;
 	margin-bottom: 2rem;
 }
+
+/* contacts */
 .contact__address{
 	font-size: 1.8rem;
 	font-style: normal;
