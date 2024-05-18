@@ -406,7 +406,25 @@ p{
 	border-radius: var(--bigRadius);
 	position: absolute;
 	top: 1%;
-	right: 0;
+	right: -10%;
+}
+
+/* price */
+.price{
+	padding: 3rem 4.5rem;
+}
+.price__heading{
+	text-transform: capitalize;
+	position: relative;
+}
+.price .divider{
+	margin: 3rem 0;
+}
+.price__list{
+	margin: 5rem 0;
+}
+.price__item{
+	margin-bottom: 1rem;
 }
 
 @media screen and (min-width:600px) {
