@@ -458,7 +458,7 @@ p{
 }
 
 /* contacts */
-.contact__heading{
+.contact__heading, .links__heading{
 	font-size: 2rem;
 	margin-bottom: 2rem;
 }
@@ -471,6 +471,18 @@ p{
 	margin-top: 1rem;
 }
 
+/* links */
+.links__container{
+	justify-content: space-between;
+}
+.links .link{
+	opacity: .7;
+	color: var(--headingColor);
+}
+.links .link:hover{
+	font-weight: 700;
+	opacity: 1;
+}
 
 
 @media screen and (min-width:600px) {
