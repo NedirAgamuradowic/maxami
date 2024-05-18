@@ -38,13 +38,14 @@
     referrerpolicy="no-referrer"
   />
   <body>
-
-
+    
     <script>
       const bar = document.querySelector(".bar");
       const menu = document.querySelector(".menu");
-      bar.addEventListener("click", () => {
-        menu.classList.toggle("show");
+      window.addEventListener("click", (e) => {
+        if (e.target === bar) {
+          menu.classList.toggle("show");
+        }
       });
     </script>
   </body>

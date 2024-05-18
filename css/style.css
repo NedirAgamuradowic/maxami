@@ -74,6 +74,10 @@ p{
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
+.svg{
+	width: 100%;
+	max-width: 500px;
+}
 
 /* link  */
 .link{
@@ -539,10 +543,16 @@ p{
 	cursor: pointer;
 }
 
+/* hero */
+.hero{
+	gap: 3rem;
+}
+.hero__img{
+	align-self: center;
+}
+
 @media screen and (min-width:600px) {
-	.flex--phone{
-		flex-direction: row;
-	}
+	
 }
 
 
@@ -559,7 +569,7 @@ p{
 	p{
 		font-size: 1.8rem;
 	}
-	.flex--tablet{
+	.flex--tablet, .flex--phone{
 		flex-direction: row;
 	}
 	.action, .input, .list{
@@ -589,7 +599,14 @@ p{
 	.menu__item{
 		margin-left: 1rem;
 	}
-	
+	.hero{
+		justify-content: space-around;
+		align-items: center;
+	}
+	.hero__content{
+		flex-basis: 40%;
+	}
+
 }
 
 @media screen and (min-width:1024px){
