@@ -86,10 +86,10 @@ p{
 	font-size: 1.8rem;
 	color: var(--textColor);
 	text-decoration: none;
+	position: relative;
 }
 .link--arrow{
 	text-transform: capitalize;
-	position: relative;
 }
 .link--arrow::after{
 	content: '\2192';
@@ -98,6 +98,21 @@ p{
 }
 .link--arrow:hover::after{
 	margin-left: 1.5rem;
+}
+.link--tick::before{
+	content: '\2713';
+	color: var(--primaryColor);
+	font-weight: 700;
+	margin-right: 1rem;
+}
+.link--saltire{
+	opacity: .6;
+}
+.link--saltire::before{
+	content: '\2613';
+	color: var(--badgeText);
+	font-weight: 700;
+	margin-right: 1rem;
 }
 
 /* button */
