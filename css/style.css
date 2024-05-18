@@ -253,6 +253,17 @@ p{
 	text-transform: capitalize;
 }
 
+/* content element */
+.content__heading::first-letter, .content__desc::first-letter{
+	text-transform: capitalize;
+}
+.content--big .content__desc{
+	margin: 2.5rem 0 3rem;
+}
+.content--small .content__desc{
+	margin: 1.5rem 0;
+}
+
 @media screen and (min-width:600px) {
 	.flex--phone{
 		flex-direction: row;
