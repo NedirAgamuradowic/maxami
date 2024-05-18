@@ -209,7 +209,7 @@ i{
 	letter-spacing: 1.5px;
 	border: none;
 	outline: none;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	color: var(--textColor);
 }
 
@@ -217,7 +217,7 @@ i{
 .input-group{
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem 2rem;
+	padding: .7rem 1.4rem;
 	border: 2px solid var(--primaryColor);
 	border-radius: var(--bigRadius);
 }
@@ -452,7 +452,7 @@ i{
 	gap: 1.5rem;
 }
 .call__icon{
-	font-size: 4rem;
+	font-size: 3.5rem;
 }
 .call__text .question{
 	font-size: 1.1rem;
@@ -461,7 +461,7 @@ i{
 }
 .call__number{
 	font-weight: 700;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	line-height: 1;
 }
 
@@ -477,15 +477,18 @@ i{
 
 /* contacts */
 .contact__address{
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	font-style: normal;
 }
 .location, .email{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	margin-top: 1rem;
 }
 
 /* links */
+.links{
+	max-width: 280px;
+}
 .links__container{
 	justify-content: space-between;
 }
@@ -500,7 +503,7 @@ i{
 
 /* subscribe */
 .subscribe__text{
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	opacity: .7;
 	margin-top: 2.5rem;
 }
@@ -581,6 +584,12 @@ i{
 	justify-self: center;
 }
 
+.footer__copy{
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 700px;
+}
+
 @media screen and (min-width:600px) {
 	.grid--2x{
 		grid-template-columns: repeat(2, 1fr);
@@ -659,6 +668,7 @@ i{
 	}
 	.grid--3x{
 		grid-template-columns: repeat(3, 1fr);
+		align-items: flex-start;
 	}
 	.business .section__box{
 		width: 60%;
@@ -666,7 +676,9 @@ i{
 	.business .section__content{
 		width: 35%;
 	}
-	
+	.footer__grid{
+		grid-template-columns: 2fr 1.8fr 2fr;
+	}
 }
 
 @media screen and (min-width:1024px){
